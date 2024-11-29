@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'store/css/global.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Nossa Loja</h1>
+        <p>Os melhores produtos para você!</p>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="https://loremflickr.com/1920/500/nature" alt="Banner Loja">
+            <div class="overlay">
+                <h2>Grandes Promoções!</h2>
+                <p>Confira nossos descontos exclusivos.</p>
+                <a href="{% url 'store:products' %}" class="btn">Ver Produtos</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Nossa Loja. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

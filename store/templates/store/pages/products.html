@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="{% static 'store/css/global.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Nossos Produtos</h1>
+        <p>Escolha o que combina com você!</p>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x200/4caf50/ffffff.png&text=Produto+1" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>R$ 50,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x200/ff5722/ffffff.png&text=Produto+2" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>R$ 80,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x200/2196f3/ffffff.png&text=Produto+3" alt="Produto 3">
+                <h3>Produto 3</h3>
+                <p>R$ 120,00</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Nossa Loja. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
