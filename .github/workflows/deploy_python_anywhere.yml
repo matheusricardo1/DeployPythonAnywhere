@@ -1,0 +1,24 @@
+name: Deploy PythonAnywhere
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checar o código
+    - uses: actions/checkout@v4
+    
+    - name: Instalar o Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Deploy PythonAnywhere
+      run: |
+        python deploy.py
+
